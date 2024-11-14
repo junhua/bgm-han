@@ -10,21 +10,6 @@ An open-source implementation of an enhanced Hierarchical Attention Network with
 - Comes with a dummy dataset for testing and demonstration purposes.
 - Modular code structure for easy customization and extension.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Preparing the Dummy Dataset](#preparing-the-dummy-dataset)
-  - [Running the Example Script](#running-the-example-script)
-  - [Using SentencePiece Tokenizer](#using-sentencepiece-tokenizer)
-- [Project Structure](#project-structure)
-- [Requirements](#requirements)
-- [Testing](#testing)
-- [License](#license)
-- [Contributing](#contributing)
-- [Citation](#citation)
-- [Contact](#contact)
-
 ## Installation
 
 Clone the repository and install the requirements:
