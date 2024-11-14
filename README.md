@@ -1,6 +1,6 @@
 # BGM-HAN
 
-An open-source implementation of an enhanced Hierarchical Attention Network with Byte-pair Encoded, Gated Residual Connetions and Multihead Attention **(BGM-HAN)** for text classification using PyTorch.
+An open-source implementation of an enhanced Hierarchical Attention Network with Byte-pair Encoded, Gated Residual Connections, and Multihead Attention **(BGM-HAN)** for text classification using PyTorch.
 
 Paper: [ArXiv](https://arxiv.org/pdf/2411.08504)
 
@@ -14,7 +14,13 @@ Paper: [ArXiv](https://arxiv.org/pdf/2411.08504)
 
 ## Installation
 
-Clone the repository and install the requirements:
+To install the BGM-HAN package directly from PyPI:
+
+```bash
+pip install bgmhan
+```
+
+Alternatively, if you want to work with the source code, clone the repository and install the requirements manually:
 
 ```bash
 git clone https://github.com/junhua/BGMHAN.git
@@ -22,7 +28,7 @@ cd BGMHAN
 pip install -r requirements.txt
 ```
 
-Alternatively, install the package using `setup.py`:
+To install the package in editable mode using `setup.py`:
 
 ```bash
 pip install -e .
@@ -32,13 +38,13 @@ pip install -e .
 
 ### Preparing the Dummy Dataset
 
-A script to generate a dummy dataset with BPE tokenization is provided for testing purposes. 
+A script to generate a dummy dataset with BPE tokenization is provided for testing purposes:
 
 ```bash
 python examples/generate_dummy_data.py
 ```
 
-This will create a `dummy_dataset.csv` and `tokenizer.model` files in the `data/` directory.
+This will create a `dummy_dataset.csv` and `tokenizer.model` file in the `data/` directory.
 
 ### Running the Example Script
 
@@ -50,7 +56,7 @@ python examples/run_bgmhan.py
 
 This script will:
 
-- Load the dummy dataset 
+- Load the dummy dataset.
 - Perform BPE tokenization and embedding (or BERT tokenization and embedding, if chosen).
 - Train the BGM-HAN model.
 - Evaluate the model and print results.
@@ -59,14 +65,13 @@ This script will:
 
 To use the SentencePiece tokenizer, you need a SentencePiece model file (`.model`). For guidance on training a SentencePiece model, refer to the [sentencepiece documentation](https://github.com/google/sentencepiece).
 
-
 1. Update the `sentencepiece_model_path` in `examples/run_bgmhan.py` to point to your SentencePiece model file:
 
    ```python
    sentencepiece_model_path = 'data/sentencepiece.model'  # Update with your actual model path
    ```
 
-2. Change the `tokenizer_type` to `'sentencepiece'` 
+2. Change the `tokenizer_type` to `'sentencepiece'`. 
 
 3. Run the example script:
 
@@ -87,8 +92,6 @@ Install all dependencies using:
 ```bash
 pip install -r requirements.txt
 ```
-
-Ensure all tests pass before using the package in your projects.
 
 ## License
 
