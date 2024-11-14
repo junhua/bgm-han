@@ -2,6 +2,8 @@
 
 An open-source implementation of an enhanced Hierarchical Attention Network with Byte-pair Encoded, Gated Residual Connetions and Multihead Attention **(BGM-HAN)** for text classification using PyTorch.
 
+Paper: [ArXiv](https://arxiv.org/pdf/2411.08504)
+
 ## Features
 
 - Implements the BGM-HAN model architecture.
